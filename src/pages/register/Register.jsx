@@ -1,7 +1,6 @@
 import './register.css';
 
 export default function Register() {
-	const a = '';
 	return (
 		<div className='register'>
 			<span className='registerTitle'>Register</span>
