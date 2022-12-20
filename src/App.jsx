@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import Topbar from './components/topbar/Topbar';
 import Homepage from './pages/homepage/Homepage';
 import Login from './pages/login/Login';
@@ -11,17 +10,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
 	return (
 		<BrowserRouter>
-			<Fragment>
-				<Topbar />
-				<Routes>
-					<Route path='/' element={<Homepage />} />
-					<Route path='/register' element={<Register />} />
-					<Route path='/login' element={<Login />} />
-					<Route path='/post/:id' element={<Single />} />
-					<Route path='/write' element={<Write />} />
-					<Route path='/settings' element={<Settings />} />
-				</Routes>
-			</Fragment>
+			<Topbar />
+			<Routes>
+				<Route path='/' element={<Homepage />} />
+				<Route path='/register' element={<Register />} />
+				<Route path='/login' element={<Login />} />
+				<Route path='/post/:id' element={<Single />} />
+				<Route path='/write' element={<Write />} />
+				<Route path='/settings' element={<Settings />} />
+			</Routes>
 		</BrowserRouter>
 	);
 }
