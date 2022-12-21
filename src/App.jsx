@@ -13,6 +13,7 @@ function App() {
 			<Topbar />
 			<Routes>
 				<Route path='/' element={<Homepage />} />
+				<Route path='/posts' element={<Homepage />} />
 				<Route path='/register' element={<Register />} />
 				<Route path='/login' element={<Login />} />
 				<Route path='/post/:id' element={<Single />} />
